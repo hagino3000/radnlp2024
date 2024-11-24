@@ -1,0 +1,46 @@
+[project]
+name = "radnlp2024"
+version = "0.1.0"
+description = "Solutions for RadNLP2024 shared task"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-cloud-aiplatform>=1.70.0",
+    "google-generativeai>=0.8.3",
+    "ipykernel>=6.29.5",
+    "litellm>=1.52.14",
+    "loguru>=0.7.2",
+    "numpy>=2.1.2",
+    "openai>=1.52.1",
+    "pandas>=2.2.3",
+    "pydantic>=2.9.2",
+    "python-dotenv>=1.0.1",
+    "typer>=0.12.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.13.0",
+    "ruff>=0.7.0",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.ruff.lint]
+select = ["I", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["appllm"]
+
+[tool.mypy]
+ignore_missing_imports = true
+plugins = ["numpy.typing.mypy_plugin", "pydantic.mypy"]
+python_version = "3.11"
