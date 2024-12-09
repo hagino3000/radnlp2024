@@ -1541,6 +1541,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pydantic" },
     { name = "python-dotenv" },
+    { name = "tqdm" },
     { name = "typer" },
 ]
 
@@ -1562,6 +1563,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "pydantic", specifier = ">=2.9.2" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
+    { name = "tqdm", specifier = ">=4.67.0" },
     { name = "typer", specifier = ">=0.12.5" },
 ]
 

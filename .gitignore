@@ -108,3 +108,4 @@ dmypy.json
 
 dataset/radnlp_2024_train_val/en
 dataset/radnlp_2024_train_val/ja
+results

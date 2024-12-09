@@ -1,4 +1,8 @@
 {
+    "files.watcherExclude": {
+        "dataset": true,
+        "results": true
+    },
     "files.exclude": {
         "**/__pycache__": true,
         ".mypy_cache": true,
