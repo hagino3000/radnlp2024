@@ -4,7 +4,7 @@ from pathlib import Path
 
 from radnlp2024.models import MainTaskResult
 
-BASE_DIR = Path("results/main_task")
+BASE_DIR = Path("dist/main_task")
 
 
 @dataclass
@@ -30,7 +30,7 @@ class MainTaskResultRepository:
         save_file = save_dir / ("prompt_" + record_id + ".txt")
         save_file.write_text(prompt)
 
-    def compose_submit_file(self) -> None:
+    def compose_submission_file(self) -> None:
         save_dir = self.resolve_save_dir()
         submit_file = save_dir / "submission.csv"
         with submit_file.open("w") as f:
